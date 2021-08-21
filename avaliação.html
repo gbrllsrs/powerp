@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="avaliação.css">
+    <link rel="sortcut icon" href="super-poderosas.ico" type="image/x-icon">
+    <title>As Meninas Super Poderosas </title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="super poderosas.png" class="logo"></a>
+            <ul>
+              <li><a href="https://pt.wikipedia.org/wiki/The_Powerpuff_Girls#:~:text=McCracken%20originalmente%20desenvolveu%20um%20show,seu%20programa%20What%20a%20Cartoon!">Como surgiu?</a></li>
+              <li><a href="https://blog.funstock.com.br/meninas-superpoderosas-curiosidades/#:~:text=As%20Meninas%20Superpoderosas%20foram%20criadas,delas%20representa%20um%20desses%20ingredientes.">Curiosidades</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>As Meninas<br><span>Super Poderosas</span></h2>
+                <p><span1>Florzinha</span1>, <span2>Lindinha</span2> e <span3>Docinho</span3> são três irmãs que foram criadas em laboratório pelo Professor Utônio. Ele juntou os três ingredientes para criar as garotinhas perfeitas: Açúcar, tempero e tudo que há de bom. Mas, acidentalmente, ele adicionou o Elemento X, que concedeu a elas superpoderes, e agora elas são as responsáveis por defender a cidade de Townsville dos crimes e das forças do mal.</p>
+                <a href="https://pt.wikipedia.org/wiki/The_Powerpuff_Girls">Ler mais</a>
+                
+            </div>
+            <div class="imgBox">
+                <img src="florzinha.png" class="poderosas">
+            </div>
+            <ul class="thumb">
+                <li><img src="florzinha1.png" onclick="imgSlider('florzinha.png');changeCircleColor('rgb(238, 138, 158)')"></li>
+                <li><img src="lindinha1.png" onclick="imgSlider('lindinha.png');changeCircleColor('#72b6fa')"></li>
+                <li><img src="docinho1.png" onclick="imgSlider('docinho.png');changeCircleColor('#8ecf8e')"></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.poderosas').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+
+</body>
+</html>
